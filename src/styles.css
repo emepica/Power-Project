@@ -1,3 +1,78 @@
-h1{
+body{
+    margin: 0 auto;
     text-align: center;
+    font-family:monospace;
+    background-color: rgb(22, 5, 39);
+    color: white;
+}
+.container{
+    margin: 0 auto;
+    max-width: 1200px;
+}
+header{ 
+    aspect-ratio: 20/7;
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.3)), url('/img/Cover.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+    display: inline-block;
+    padding-top: 100px;
+    color: white;
+    font-size: 80px;
+    text-align: center;
+    text-transform: uppercase;
+}
+header button{
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 30px;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(66, 17, 116);
+    background-color: rgb(231, 204, 249) ;
+}
+header button:hover{
+    background-color: rgb(197, 160, 221);
+}
+
+.section-1{
+    background: white;
+    color: rgb(66, 17, 116);
+    display: flex;
+}
+
+.section-1 img{
+    aspect-ratio:16/9;
+    margin: 20px;
+    max-width: 400px;
+}
+
+.section-1 p{
+    padding: 120px;
+    text-align: left;
+}
+
+@media (max-width:600px){
+    .container{
+        margin: 0 auto;
+        max-width: 100%;
+    }
+    header{ 
+        aspect-ratio: 3/3;
+    }
+    h1{
+        font-size: 60px;
+        padding-top: 40px;
+    }
+    .section-1 img{
+        margin: 20px;
+        max-width: 30%;
+    }
+    .section-1 p{
+        padding: 20px;
+        text-align: left;
+    }
 }
