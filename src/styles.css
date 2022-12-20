@@ -89,7 +89,7 @@ main{
 .card{
     background-color: white;
     border-radius: 8px;
-    padding: 10px;
+    padding: 20px;
     text-align: left;
 }
 .card button{
@@ -105,7 +105,10 @@ main{
     color: rgb(66, 17, 116);
     background-color: rgb(170, 128, 198)
 }
-
+iframe{
+    width:100%;
+    aspect-ratio: 16/9;
+}
 
 footer{
     aspect-ratio: 5/1;
@@ -137,9 +140,13 @@ footer a{
         font-size: 60px;
         padding-top: 40px;
     }
-    section, footer{
+    section, .grid, footer{
         grid-template-columns: 1fr;
         grid-gap: 0;
+    }
+    .card{
+        
+        margin-bottom: 10px;
     }
     section img{
         margin: 0 auto;
